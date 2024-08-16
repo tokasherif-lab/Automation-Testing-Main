@@ -32,7 +32,7 @@ public class P02_PickHotelPage {
     }
 
     public String getHotelName(){
-        return Utility.getText(driver,pickHotel);
+         return Utility.getText(driver,pickHotel);
     }
 
     public P03_DetailsPage seeAvailability() {

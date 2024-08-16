@@ -69,15 +69,12 @@ public class TC03_DetailsPage {
                 .scrollPage1()
                 .selectABed()
                 .selectARoom()
-                .clickOnReserve()
-                .assertHotelName();
+                .clickOnReserve();
+      //  getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(50));
 
-
-        getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(50));
-
-       //Assert.assertTrue(new P02_PickHotelPage(getDriver()).assertPickHotelTC(getPropertyValue("environment", "DETAILSPAGE_URL")));
+      // Assert.assertTrue(new P03_DetailsPage(getDriver()).comparingHotel());
     }
 
-   // @AfterMethod
-    //public void quit() {quitDriver();}
+   @AfterMethod
+    public void quit() {quitDriver();}
 }

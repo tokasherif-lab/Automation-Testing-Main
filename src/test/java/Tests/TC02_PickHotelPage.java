@@ -28,8 +28,6 @@ public class TC02_PickHotelPage {
         LogsUtils.info("Page is redirected to URL");
         getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
         getDriver().getWindowHandles();
-
-
     }
 
     //@Listeners({IInvokedMethodListener.class, ITestResultListener.class})

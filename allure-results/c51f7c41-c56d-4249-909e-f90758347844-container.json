@@ -1,0 +1,1 @@
+{"uuid":"c51f7c41-c56d-4249-909e-f90758347844","name":"Tests.TC03_DetailsPage.setup","children":["97efae6a-3760-4028-86c3-de994f3f6694"],"description":"","befores":[{"name":"setup","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1723806234538,"stop":1723806240644}],"afters":[],"start":1723806234537,"stop":1723806240645}

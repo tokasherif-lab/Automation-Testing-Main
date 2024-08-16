@@ -49,20 +49,21 @@ public class P03_DetailsPage extends P02_PickHotelPage{
     }
     public String getHotelNameReservePge()
     {
-        return Utility.getText(driver,hotelNameReserve);
+        //Utility.getText(driver,hotelNameReserve);
+        return String.valueOf(Utility.getText(driver,hotelNameReserve));
     }
     public boolean comparingHotel() {
         return getHotelNameReservePge().equals(getHotelName());
     }
 
-    public boolean assertHotelName() {
+   /* public boolean assertHotelName() {
         if (comparingHotel() ==true )
         {
             System.out.println("Hotel Name are equal");
         } else
             System.out.println("Hotel Name not equal");
         return false;
-    }
+    }*/
 
    /* public String getCheckinDateonReservePage() {
         try {

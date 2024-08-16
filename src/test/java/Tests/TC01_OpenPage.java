@@ -43,8 +43,6 @@ public class TC01_OpenPage {
                 .findCeckoutDate()
                 .clickOnSearchBtn();
         getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(50));
-
-
         Assert.assertTrue(new P01_OpenPage(getDriver()).assertOpenPageTC(getPropertyValue("environment", "SEARCH_URL")));
 
     }

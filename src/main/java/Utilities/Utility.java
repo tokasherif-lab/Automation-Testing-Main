@@ -17,21 +17,21 @@ import java.time.Duration;
 import java.util.*;
 
 public class Utility {
-    private static final String SCREENSHOTS_PATH = "Test-output/screenshots/";
+   // private static final String SCREENSHOTS_PATH = "Test-output/screenshots/";
 
     public static void clickingOnElement(WebDriver driver, By locator) {
-        new WebDriverWait(driver, Duration.ofSeconds(10))
+        new WebDriverWait(driver, Duration.ofSeconds(50))
                 .until(ExpectedConditions.elementToBeClickable(locator));
         driver.findElement(locator).click();
     }
 
     public static void sendData(WebDriver driver, By locator, String data) {
-        new WebDriverWait(driver, Duration.ofSeconds(20))
+        new WebDriverWait(driver, Duration.ofSeconds(30))
                 .until(ExpectedConditions.visibilityOfElementLocated(locator));
         driver.findElement(locator).sendKeys(data);
     }
     public static List<WebElement> findElements(WebDriver driver, By locator) {
-        new WebDriverWait(driver, Duration.ofSeconds(10))
+        new WebDriverWait(driver, Duration.ofSeconds(50))
                 .until(ExpectedConditions.visibilityOfElementLocated(locator));
         return driver.findElements(locator);
     }
@@ -58,7 +58,7 @@ public class Utility {
     }
 
     public static String getText(WebDriver driver, By locator){
-        new WebDriverWait(driver, Duration.ofSeconds(50))
+        new WebDriverWait(driver, Duration.ofSeconds(30))
                 .until(ExpectedConditions.visibilityOfElementLocated(locator));
         return driver.findElement(locator).getText();
     }
@@ -67,7 +67,7 @@ public class Utility {
         return driver.findElement(locator);
     }
 
-    public static void takeScreenShot(WebDriver driver, String screenShotName) {
+   /* public static void takeScreenShot(WebDriver driver, String screenShotName) {
         try {
             //Capture screenshot using Takescreenshot function
             File screenshotSrc = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
@@ -79,13 +79,13 @@ public class Utility {
         } catch (Exception e) {
             e.printStackTrace();
         }
-    }
+    }*/
 
-    public static String getTimestamp() {
+   /* public static String getTimestamp() {
         return new SimpleDateFormat("yyyy-MM-dd-h-m-ssa").format(new Date());
-    }
+    }*/
 
-    public static void takeFullScreenshot(WebDriver driver, By locator) {
+   /* public static void takeFullScreenshot(WebDriver driver, By locator) {
         try {
             Shutterbug.shootPage(driver, Capture.FULL_SCROLL)
                     .highlight(findWebElement(driver, locator))
@@ -94,39 +94,39 @@ public class Utility {
             LogsUtils.error(e.getMessage());
         }
 
-    }
+    }*/
 
     public static int generateRandomNumber(int upperBound) {
         return new Random().nextInt(upperBound) + 1;
     }
 
     //Set >> unique numbers
-    public static Set<Integer> generateUniqueNumber(int numberOfProductsNeeded, int totalNumberOfProducts) {
+   /* public static Set<Integer> generateUniqueNumber(int numberOfProductsNeeded, int totalNumberOfProducts) {
         Set<Integer> generatedNumbers = new HashSet<>();
         while (generatedNumbers.size() < numberOfProductsNeeded) {
             int randomNumber = generateRandomNumber(totalNumberOfProducts);
             generatedNumbers.add(randomNumber);
         }
         return generatedNumbers;
-    }
+    }*/
 
-    public static boolean verifyPageURL(WebDriver driver, String expectedURL) {
+   /* public static boolean verifyPageURL(WebDriver driver, String expectedURL) {
         try {
             generalWait(driver).until(ExpectedConditions.urlToBe(expectedURL));
         } catch (Exception e) {
             return false;
         }
         return true;
-    }
+    }*/
 
-    public static Set<Cookie> getAllCookies(WebDriver driver) {
+  /*  public static Set<Cookie> getAllCookies(WebDriver driver) {
         return driver.manage().getCookies();
-    }
+    }*/
 
-    public static void restorSession(WebDriver driver, Set<Cookie> cookies) {
+   /* public static void restorSession(WebDriver driver, Set<Cookie> cookies) {
         for (Cookie cookie : cookies)
             driver.manage().addCookie(cookie);
-    }
+    }*/
 
     public static File getLatestFile(String folderPath) {
         File folder = new File(folderPath);
