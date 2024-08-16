@@ -1,21 +1,10 @@
 package Pages;
 
-import Utilities.LogsUtils;
 import Utilities.Utility;
-import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.interactions.WheelInput;
-import org.openqa.selenium.support.ui.Select;
-import org.openqa.selenium.support.ui.WebDriverWait;
-
-import java.time.Duration;
-import java.util.Set;
+import org.openqa.selenium.*;
 
 
-public class P03_DetailsPage extends P01_OpenPage {
+public class P03_DetailsPage extends P02_PickHotelPage {
     private final WebDriver driver;
 
    private final By reservePage=By.xpath("//*[@id=\"b2hotelPage\"]");
@@ -47,25 +36,20 @@ public class P03_DetailsPage extends P01_OpenPage {
         Utility.clickingOnElement(driver,reserveBtn);
         return new P03_DetailsPage(driver);
     }
-    public String getHotelNameReservePge()
+
+    //Start Assertion for hotel name
+   /* public String getHotelNameReservePge()
     {
-        //Utility.getText(driver,hotelNameReserve);
-        return String.valueOf(Utility.getText(driver,hotelNameReserve));
+      return Utility.getText(driver,hotelNameReserve);
     }
-  /*  public boolean comparingHotel() {
+
+   public boolean comparingHotel() {
+
         return getHotelNameReservePge().equals(getHotelName());
     }*/
 
-   /* public boolean assertHotelName() {
-        if (comparingHotel() ==true )
-        {
-            System.out.println("Hotel Name are equal");
-        } else
-            System.out.println("Hotel Name not equal");
-        return false;
-    }*/
-
-    public String getCheckinDateonReservePage() {
+    //Start Assertion for checkin/checkoutdate
+   /* public String getCheckinDateonReservePage() {
         try {
             return Utility.getText(driver, checkinReservation);
 
@@ -73,9 +57,9 @@ public class P03_DetailsPage extends P01_OpenPage {
             LogsUtils.error(e.getMessage());
         }
         return "0";
-    }
+    }*/
 
-    public String getCheckoutDateonReservePage() {
+    /*public String getCheckoutDateonReservePage() {
         try {
             return Utility.getText(driver, checkoutReservation);
 
@@ -83,7 +67,7 @@ public class P03_DetailsPage extends P01_OpenPage {
             LogsUtils.error(e.getMessage());
         }
         return "0";
-    }
+    }*/
 
     /*public boolean comparingCheckinDatewithReservationDate() {
     return getCheckinDateonReservePage().equals(getCheckinDate());

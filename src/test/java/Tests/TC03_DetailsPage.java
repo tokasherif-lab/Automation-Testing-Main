@@ -43,7 +43,7 @@ public class TC03_DetailsPage {
         }
 
     }
-    
+
 
     @Test(priority = 3)
     public void reserveHotel() throws IOException, InterruptedException {
@@ -69,11 +69,12 @@ public class TC03_DetailsPage {
                 .selectABed()
                 .selectARoom()
                 .clickOnReserve();
-      //  getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(50));
-       //  Assert.assertTrue(new P03_DetailsPage(getDriver()).comparingCheckinDatewithReservationDate());
-        //Assert.assertTrue(new P03_DetailsPage(getDriver()).comparingCheckoutDatewithReservationDate());
 
-      // Assert.assertTrue(new P03_DetailsPage(getDriver()).comparingHotel());
+      //  getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(50));
+
+        // Assert.assertTrue(new P03_DetailsPage(getDriver()).comparingCheckinDatewithReservationDate());
+        // Assert.assertTrue(new P03_DetailsPage(getDriver()).comparingCheckoutDatewithReservationDate());
+        // Assert.assertTrue(new P03_DetailsPage(getDriver()).comparingHotel());
     }
 
    @AfterMethod
