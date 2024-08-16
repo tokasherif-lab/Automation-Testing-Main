@@ -1,0 +1,8 @@
+[INFO] 2024-08-15 14:34:01.121 [main] [Tests.TC03_DetailsPage.setup(TC03_DetailsPage.java:30)] - Browser is opened
+[INFO] 2024-08-15 14:34:04.180 [main] [Tests.TC03_DetailsPage.setup(TC03_DetailsPage.java:32)] - Page is redirected to URL
+[ERROR] 2024-08-15 14:35:30.926 [main] [Pages.P03_DetailsPage.getCheckinDateonReservePage(P03_DetailsPage.java:55)] - Expected condition failed: waiting for visibility of element located by By.xpath: //*[@id="bodyconstraint-inner"]/div[3]/div[3]/aside/div/section[1]/div/div/div[1]/div[1]/div/div[1]/time/span[1] (tried for 5 second(s) with 500 milliseconds interval)
+Build info: version: '4.23.1', revision: '656257d8e9'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.119, chrome: {chromedriverVersion: 127.0.6533.119 (bdef6783a05..., userDataDir: C:\Users\Dell\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61364}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61364/devtoo..., se:cdpVersion: 127.0.6533.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ac629a116f5d79b0cbb144841cf040e8

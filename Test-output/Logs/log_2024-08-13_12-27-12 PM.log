@@ -1,0 +1,2 @@
+[INFO] 2024-08-13 12:27:12.621 [main] [Tests.TC01_OpenPage.setup(TC01_OpenPage.java:29)] - Browser is opened
+[INFO] 2024-08-13 12:27:15.544 [main] [Tests.TC01_OpenPage.setup(TC01_OpenPage.java:31)] - Page is redirected to URL

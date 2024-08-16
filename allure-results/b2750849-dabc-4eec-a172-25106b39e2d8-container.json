@@ -1,0 +1,1 @@
+{"uuid":"b2750849-dabc-4eec-a172-25106b39e2d8","name":"Tests.TC02_PickHotelPage.setup","children":["41afb0ed-a11f-48b8-b407-5b53d5ebe103"],"description":"","befores":[{"name":"setup","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1723548078824,"stop":1723548084661}],"afters":[],"start":1723548078824,"stop":1723548084661}

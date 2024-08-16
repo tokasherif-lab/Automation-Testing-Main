@@ -1,0 +1,1 @@
+{"uuid":"d1a5b928-8526-4df8-a5f3-acb782673830","name":"Tests.TC01_OpenPage.setup","children":["1756fa2e-699d-4732-923d-c8ffd8ba18ca"],"description":"","befores":[{"name":"setup","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1723638663299,"stop":1723638669060}],"afters":[],"start":1723638663298,"stop":1723638669060}
