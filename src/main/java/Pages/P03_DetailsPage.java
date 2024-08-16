@@ -15,7 +15,7 @@ import java.time.Duration;
 import java.util.Set;
 
 
-public class P03_DetailsPage extends P02_PickHotelPage{
+public class P03_DetailsPage extends P01_OpenPage {
     private final WebDriver driver;
 
    private final By reservePage=By.xpath("//*[@id=\"b2hotelPage\"]");
@@ -52,9 +52,9 @@ public class P03_DetailsPage extends P02_PickHotelPage{
         //Utility.getText(driver,hotelNameReserve);
         return String.valueOf(Utility.getText(driver,hotelNameReserve));
     }
-    public boolean comparingHotel() {
+  /*  public boolean comparingHotel() {
         return getHotelNameReservePge().equals(getHotelName());
-    }
+    }*/
 
    /* public boolean assertHotelName() {
         if (comparingHotel() ==true )
@@ -65,7 +65,7 @@ public class P03_DetailsPage extends P02_PickHotelPage{
         return false;
     }*/
 
-   /* public String getCheckinDateonReservePage() {
+    public String getCheckinDateonReservePage() {
         try {
             return Utility.getText(driver, checkinReservation);
 
@@ -85,19 +85,12 @@ public class P03_DetailsPage extends P02_PickHotelPage{
         return "0";
     }
 
-    public boolean comparingCheckinDatewithReservationDate() {
+    /*public boolean comparingCheckinDatewithReservationDate() {
     return getCheckinDateonReservePage().equals(getCheckinDate());
     }
     public boolean comparingCheckoutDatewithReservationDate(){
         return getCheckoutDateonReservePage().equals(getCheckoutDate());
-    }
-    public boolean assertDate() {
-        if (comparingCheckinDatewithReservationDate() ==true &&  comparingCheckoutDatewithReservationDate()==true)
-        {
-            System.out.println("Date are equal");
-        } else
-            System.out.println("date not equal");
-        return false;
     }*/
+
 
 }
